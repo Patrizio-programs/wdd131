@@ -15,3 +15,11 @@ body {
     background: yellow;
     grid-column: 3 / 4;
   }
+
+
+  footer {
+    background: wheat;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+  }
