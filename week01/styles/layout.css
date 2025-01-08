@@ -15,8 +15,13 @@ body {
     grid-column: 3 / 4;
   }
 
+  main {
+   
+    grid-column: 2 / 3;
+  }
 
-  footer {
+
+footer {
  
     padding: 2rem;
     text-align: center;
