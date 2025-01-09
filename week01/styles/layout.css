@@ -11,6 +11,10 @@ header{
   grid-column: 1 / 4;
 }
 
+aside{
+  grid-column: 3/4;
+}
+
 footer {
  
     padding: 2rem;
