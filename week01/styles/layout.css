@@ -1,20 +1,22 @@
 
 
-main{
-  
+.main-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  gap: 20px; 
 }
 
-.main-container{
-  display: grid;
+main {
+  width: 100%; 
+}
+
+aside {
+  width: 100%; 
 }
 
 header{
   padding: 2rem;
   
-}
-
-aside{
-
 }
 
 
