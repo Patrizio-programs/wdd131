@@ -18,7 +18,7 @@ body {
   
   header {
     grid-area: header;
-    background-color: #333;
+    background-color: red;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -53,7 +53,7 @@ body {
   
   footer {
     grid-area: footer;
-    background-color: #333;
+    background-color: red;
     color: white;
     text-align: center;
     padding: 1rem;
