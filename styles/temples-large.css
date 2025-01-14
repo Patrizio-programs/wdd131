@@ -1,0 +1,11 @@
+/* temples-large.css */
+@media (min-width: 640px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
