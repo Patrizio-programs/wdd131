@@ -1,5 +1,10 @@
 .country-name{
-
     height: 300px;
     background-color: gold;
+    
 }
+
+.country-name h1{
+    align-self: center;
+}
+
