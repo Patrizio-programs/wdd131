@@ -10,6 +10,7 @@
 
 .hero {
     height: 100vh; 
+    position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,5 +37,5 @@
 }
 
 .weather{
-  
+
 }
