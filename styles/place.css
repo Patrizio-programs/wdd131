@@ -1,7 +1,6 @@
 .country-name{
     height: 150px;
-    background-color: gold;
-    
+    background-color: gold; 
 }
 
 .country-name h1{
@@ -20,14 +19,11 @@
 
 
   footer {
-    grid-area: footer;
     background-color: red;
     color: white;
     text-align: center;
     padding: 1rem;
   }
-
-
 
 
 .data-card {
