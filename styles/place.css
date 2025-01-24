@@ -29,10 +29,10 @@
 
 
 .data-card {
-  background-color: rgba(255, 255, 255, 0.9); /* White with 90% opacity */
-  padding: 16px; /* Optional: Add some padding for spacing */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 16px; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
   
