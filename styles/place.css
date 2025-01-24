@@ -1,5 +1,5 @@
 .country-name{
-    height: 300px;
+    height: 150px;
     background-color: gold;
     
 }
@@ -8,4 +8,31 @@
     text-align: center;
 
 }
+
+
+.hero {
+    height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 600px) {
+    .hero-section {
+      background-image: url('images/jam-hero.jpg'); /* Mobile image */
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .hero {
+      background-image: url('images/jam-hero.jpg'); /* Tablet image */
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .hero-section {
+      background-image: url('images/jam-hero.jpg'); /* Desktop image */
+    }
+  }
+  
 
