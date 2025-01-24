@@ -17,3 +17,15 @@
     background-repeat: no-repeat;
     background-image: url('https://placehold.co/600x400');
   }
+
+
+
+
+  footer {
+    grid-area: footer;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
