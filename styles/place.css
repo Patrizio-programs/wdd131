@@ -9,13 +9,14 @@
 
 
 .hero {
-    height: 100vh; 
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url('https://placehold.co/600x400');
-  }
+  height: 100vh; 
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("./images/herolarge.jpg");
+}
+
 
 
 footer {
