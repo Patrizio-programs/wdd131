@@ -43,3 +43,10 @@ footer {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+img {
+  max-width: 100%; /* Ensures the image does not exceed the container width */
+  height: auto;    /* Maintains the image's aspect ratio */
+  display: block;  /* Removes default inline spacing issues */
+  margin: 0 auto;  /* Centers the image horizontally if needed */
+}
