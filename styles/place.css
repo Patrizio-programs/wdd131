@@ -13,7 +13,7 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow-x: hidden;
-  background-image: url("/images/herolarge.jpg");
+  background-image: url("../images/herolarge.jpg");
 }
  
 
