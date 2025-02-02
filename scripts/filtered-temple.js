@@ -19,6 +19,108 @@ document.addEventListener('DOMContentLoaded', () => {
     displayLastModified();
 });
 
+// Keep existing functions
+function displayCopyright() {
+  const currentYear = new Date().getFullYear();
+  document.getElementById('currentyear').textContent = `© ${currentYear} Patrick Medley, Jamaica`;
+}
+
+function displayLastModified() {
+  const lastModified = document.lastModified;
+  document.getElementById('lastModified').textContent = `Last Modified: ${lastModified}`;
+}
+
+function toggleMenu() {
+  const nav = document.querySelector('nav');
+  nav.classList.toggle('show');
+}
+
+// Add new functions for temple display and filtering
+function createTempleCard(temple) {
+  const figure = document.createElement('figure');
+  
+  const img = document.createElement('img');
+  img.src = temple.imageUrl;
+  img.alt = temple.templeName;
+  img.loading = "lazy"; // Add lazy loading
+  img.width = "100%";
+  img.height = "auto";
+  
+  const figcaption = document.createElement('figcaption');
+  figcaption.innerHTML = `
+      <h3>${temple.templeName}</h3>
+      <p>Location: ${temple.location}</p>
+      <p>Dedicated: ${temple.dedicated}</p>
+      <p>Area: ${temple.area} sq ft</p>
+  `;
+  
+  figure.appendChild(img);
+  figure.appendChild(figcaption);
+  
+  return figure;
+}
+
+function displayTemples(templeList) {
+  const figuresContainer = document.querySelector('.figures');
+  figuresContainer.innerHTML = ''; // Clear existing content
+  
+  templeList.forEach(temple => {
+      const templeCard = createTempleCard(temple);
+      figuresContainer.appendChild(templeCard);
+  });
+}
+
+function filterTemples(filter) {
+  let filteredTemples;
+  
+  switch(filter) {
+      case 'old':
+          filteredTemples = temples.filter(temple => {
+              const year = parseInt(temple.dedicated.split(', ')[1]);
+              return year < 1900;
+          });
+          break;
+          
+      case 'new':
+          filteredTemples = temples.filter(temple => {
+              const year = parseInt(temple.dedicated.split(', ')[1]);
+              return year > 2000;
+          });
+          break;
+          
+      case 'large':
+          filteredTemples = temples.filter(temple => temple.area > 90000);
+          break;
+          
+      case 'small':
+          filteredTemples = temples.filter(temple => temple.area < 10000);
+          break;
+          
+      default: // 'home' or any other case
+          filteredTemples = temples;
+  }
+  
+  displayTemples(filteredTemples);
+}
+
+// Set up event listeners when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  displayCopyright();
+  displayLastModified();
+  
+  // Display all temples initially
+  displayTemples(temples);
+  
+  // Add click event listeners to navigation links
+  const nav = document.querySelector('nav');
+  nav.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A') {
+          event.preventDefault();
+          const filter = event.target.textContent.toLowerCase();
+          filterTemples(filter);
+      }
+  });
+});
 
 const temples = [
     {
