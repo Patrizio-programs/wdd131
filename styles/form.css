@@ -64,3 +64,50 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
+.review-summary {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.review-details {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.review-details h3 {
+    color: #333;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.rating-display {
+    font-size: 1.5rem;
+    color: #ffd700;
+}
+
+.star {
+    margin-right: 5px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+#display-features {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
